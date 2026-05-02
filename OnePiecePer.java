@@ -89,10 +89,6 @@ public class OnePiecePer {
 	}
 
 
-	public void mostrarInformacion(){
-		System.out.println(this.toString());
-	}
-	
 	public void esPeligroso() {
 		if(recompensa>=100000000 ||haki==true) {
 			System.out.println("Es peligroso");
