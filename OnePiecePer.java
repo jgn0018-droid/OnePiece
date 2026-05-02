@@ -10,14 +10,11 @@ public class OnePiecePer {
 	public String especie;
 
 
-	public OnePiecePer (String Nombre, long recompensa, String frutaDiablo, String tripulacion, String posicion, boolean haki, String especie) {
+	public OnePiecePer (String Nombre, long recompensa, String frutaDiablo, String tripulacion) {
   	  this.Nombre=Nombre;
   	  this.recompensa=recompensa;
   	  this.frutaDiablo=frutaDiablo;
   	  this.tripulacion=tripulacion;
-  	  this.posicion=posicion;
-  	  this.haki=haki;	
-  	  this.especie=especie;
   	  
     }
     
