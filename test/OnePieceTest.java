@@ -12,6 +12,10 @@ public class OnePieceTest {
         assertNotNull(objeto, "El objeto debería crearse correctamente");
 
     }
+
+    private void assertNotNull(OnePiecePer objeto, String elObjetoDeberíaCrearseCorrectamente) {
+
+    }
 }
 
 

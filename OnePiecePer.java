@@ -1,36 +1,20 @@
 package OnePiece;
 
-import java.util.Scanner;
-
 public class OnePiecePer {
-	public String Nombre;
-	public long recompensa;
-	public String frutaDiablo;
-	public String tripulacion;
-	public String posicion;
-	public boolean haki;
-	public String especie;
-    
-    
-    public OnePiecePer (){
-  	  this.Nombre="";
-  	  this.recompensa=0;
-  	  this.frutaDiablo="";
-  	  this.tripulacion="";
-  	  this.posicion="";
-  	  this.haki=false;
-  	  this.especie="";
-  	  
-    }
-    
-    public OnePiecePer (String Nombre, long recompensa, String frutaDiablo, String tripulacion, String posicion, boolean haki, String especie) {
+	private String Nombre;
+	private long recompensa;
+	private String frutaDiablo;
+	private String tripulacion;
+	private String posicion;
+	private boolean haki;
+	private String especie;
+
+
+	public OnePiecePer () {
   	  this.Nombre=Nombre;
   	  this.recompensa=recompensa;
   	  this.frutaDiablo=frutaDiablo;
   	  this.tripulacion=tripulacion;
-  	  this.posicion=posicion;
-  	  this.haki=haki;	
-  	  this.especie=especie;
   	  
     }
     
@@ -101,17 +85,10 @@ public class OnePiecePer {
 	   }
 	
 	public void incrementarRecompensa(long cantidad) {
-		Scanner teclado =new Scanner (System.in);
-		System.out.println("Introduce la nueva recompensa:");
-		cantidad=teclado.nextLong();
-		recompensa=cantidad;
+		NewClass.askforNewBounty(this);
 	}
-	
-	
-	public void mostrarInformacion(){
-		System.out.println(this.toString());
-	}
-	
+
+
 	public void esPeligroso() {
 		if(recompensa>=100000000 ||haki==true) {
 			System.out.println("Es peligroso");
