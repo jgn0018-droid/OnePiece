@@ -1,16 +1,16 @@
 package OnePiece;
 
 public class OnePiecePer {
-	public String Nombre;
-	public long recompensa;
-	public String frutaDiablo;
-	public String tripulacion;
-	public String posicion;
-	public boolean haki;
-	public String especie;
+	private String Nombre;
+	private long recompensa;
+	private String frutaDiablo;
+	private String tripulacion;
+	private String posicion;
+	private boolean haki;
+	private String especie;
 
 
-	public OnePiecePer (String Nombre, long recompensa, String frutaDiablo, String tripulacion) {
+	public OnePiecePer () {
   	  this.Nombre=Nombre;
   	  this.recompensa=recompensa;
   	  this.frutaDiablo=frutaDiablo;

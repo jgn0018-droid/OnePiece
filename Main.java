@@ -9,10 +9,10 @@ public class Main {
 
 		Scanner teclado =new Scanner (System.in);
 		
-		OnePiecePer C1 =new OnePiecePer ("Monkey D. Luffy", 30000000, "Hito Hito no mi Modelo Nika", "Mugiwaras");
-		OnePiecePer C2 =new OnePiecePer ("Kaido", 50000000, "Uo Uo no mi Modelo Dragón", "Piratas Bestia");
-		OnePiecePer C3 =new OnePiecePer ("Buggy", 30000000, "Bara Bara no mi", "Cross Guild");
-		OnePiecePer C4 =new OnePiecePer ("Foxy", 500000, "Noro Noro no mi", "Piratas de Foxy");
+		OnePiecePer C1 =new OnePiecePer ();
+		OnePiecePer C2 =new OnePiecePer ();
+		OnePiecePer C3 =new OnePiecePer ();
+		OnePiecePer C4 =new OnePiecePer ();
 		
 		
 		

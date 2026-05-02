@@ -8,6 +8,6 @@ public class NewClass {
         Scanner teclado =new Scanner (System.in);
         System.out.println("Introduce la nueva recompensa:");
         cantidad=teclado.nextLong();
-        onePiecePer.recompensa =cantidad;
+        onePiecePer.setrecompensa(cantidad);
     }
 }
