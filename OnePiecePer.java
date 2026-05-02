@@ -113,7 +113,11 @@ public class OnePiecePer {
 	}
 	
 	public void esPeligroso() {
-		if(recompensa>=100000000 ||haki==true) {
+		getCategory(this);
+	}
+
+	private static void getCategory(OnePiecePer onePiecePer) {
+		if(onePiecePer.recompensa >=100000000 || onePiecePer.haki ==true) {
 			System.out.println("Es peligroso");
 		}
 		else
