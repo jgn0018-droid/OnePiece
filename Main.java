@@ -2,6 +2,7 @@ package OnePiece;
 
 public class Main {
 
+
 	public static OnePiecePer[] main(String[] args) {
 		OnePiecePer[] Personaje = OnePiecePer.getOnePiecePers();
 
@@ -23,7 +24,8 @@ public class Main {
 			Personaje[i].esPeligroso();
 			System.out.println();
 
-		}
+
+	
 
 
         return Personaje;
