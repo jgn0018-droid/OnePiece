@@ -1,7 +1,5 @@
 package OnePiece;
 
-import java.util.Scanner;
-
 public class OnePiecePer {
 	public String Nombre;
 	public long recompensa;
@@ -101,13 +99,10 @@ public class OnePiecePer {
 	   }
 	
 	public void incrementarRecompensa(long cantidad) {
-		Scanner teclado =new Scanner (System.in);
-		System.out.println("Introduce la nueva recompensa:");
-		cantidad=teclado.nextLong();
-		recompensa=cantidad;
+		NewClass.askforNewBounty(this);
 	}
-	
-	
+
+
 	public void mostrarInformacion(){
 		System.out.println(this.toString());
 	}
