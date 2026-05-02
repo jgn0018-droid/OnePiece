@@ -1,11 +1,9 @@
 package OnePiece;
 
-import java.util.Scanner;
-
 public class Main {
 
 	public static OnePiecePer[] main(String[] args) {
-		OnePiecePer[] Personaje = getOnePiecePers();
+		OnePiecePer[] Personaje = OnePiecePer.getOnePiecePers();
 
 
 
@@ -31,9 +29,4 @@ public class Main {
         return Personaje;
     }
 
-	private static OnePiecePer[] getOnePiecePers() {
-		OnePiecePer[] Personaje = new OnePiecePer[4];
-		Scanner teclado = new Scanner(System.in);
-		return Personaje;
-	}
 }

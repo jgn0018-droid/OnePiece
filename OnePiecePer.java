@@ -33,8 +33,14 @@ public class OnePiecePer {
   	  this.especie=especie;
   	  
     }
-    
-    public void setrecompensa(long recompensa) 
+
+	static OnePiecePer[] getOnePiecePers() {
+		OnePiecePer[] Personaje = new OnePiecePer[4];
+		Scanner teclado = new Scanner(System.in);
+		return Personaje;
+	}
+
+	public void setrecompensa(long recompensa)
 	{
 		this.recompensa=recompensa;
 	}
