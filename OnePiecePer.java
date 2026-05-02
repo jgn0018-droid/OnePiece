@@ -8,20 +8,9 @@ public class OnePiecePer {
 	public String posicion;
 	public boolean haki;
 	public String especie;
-    
-    
-    public OnePiecePer (){
-  	  this.Nombre="";
-  	  this.recompensa=0;
-  	  this.frutaDiablo="";
-  	  this.tripulacion="";
-  	  this.posicion="";
-  	  this.haki=false;
-  	  this.especie="";
-  	  
-    }
-    
-    public OnePiecePer (String Nombre, long recompensa, String frutaDiablo, String tripulacion, String posicion, boolean haki, String especie) {
+
+
+	public OnePiecePer (String Nombre, long recompensa, String frutaDiablo, String tripulacion, String posicion, boolean haki, String especie) {
   	  this.Nombre=Nombre;
   	  this.recompensa=recompensa;
   	  this.frutaDiablo=frutaDiablo;
