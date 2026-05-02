@@ -10,7 +10,7 @@ public class OnePiecePer {
 	public String posicion;
 	public boolean haki;
 	public String especie;
-    
+    public static final String MUGIWARAS = "Mugiwaras";
     
     public OnePiecePer (){
   	  this.Nombre="";
