@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		OnePiecePer[] Personaje=new OnePiecePer[4];
+		OnePiecePer[] Personaje = getOnePiecePers();
 
 		Scanner teclado =new Scanner (System.in);
 		
@@ -30,6 +30,11 @@ public class Main {
 			
 		}
 
+	}
+
+	private static OnePiecePer[] getOnePiecePers() {
+		OnePiecePer[] Personaje=new OnePiecePer[4];
+		return Personaje;
 	}
 
 }
