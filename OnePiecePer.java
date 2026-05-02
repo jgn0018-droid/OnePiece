@@ -1,24 +1,33 @@
 package OnePiece;
 
 public class OnePiecePer {
-	private String Nombre;
-	private long recompensa;
-	private String frutaDiablo;
-	private String tripulacion;
-	private String posicion;
-	private boolean haki;
-	private String especie;
 
+	public String Nombre;
+	public long recompensa;
+	public String frutaDiablo;
+	public String tripulacion;
+	public String posicion;
+	public boolean haki;
+	public String especie;
+  public static final String MUGIWARAS = "Mugiwaras";
+    
+    public OnePiecePer (String Nombre, long recompensa, String frutaDiablo, String tripulacion, String posicion, boolean haki, String especie) {
 
-	public OnePiecePer () {
+	
   	  this.Nombre=Nombre;
   	  this.recompensa=recompensa;
   	  this.frutaDiablo=frutaDiablo;
   	  this.tripulacion=tripulacion;
   	  
     }
-    
-    public void setrecompensa(long recompensa) 
+
+	static OnePiecePer[] getOnePiecePers() {
+		OnePiecePer[] Personaje = new OnePiecePer[4];
+		Scanner teclado = new Scanner(System.in);
+		return Personaje;
+	}
+
+	public void setrecompensa(long recompensa)
 	{
 		this.recompensa=recompensa;
 	}
@@ -90,7 +99,11 @@ public class OnePiecePer {
 
 
 	public void esPeligroso() {
-		if(recompensa>=100000000 ||haki==true) {
+		getCategory(this);
+	}
+
+	private static void getCategory(OnePiecePer onePiecePer) {
+		if(onePiecePer.recompensa >=100000000 || onePiecePer.haki ==true) {
 			System.out.println("Es peligroso");
 		}
 		else
